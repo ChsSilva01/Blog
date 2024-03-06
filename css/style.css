@@ -1,0 +1,11 @@
+body{
+    position: absolute;
+    width: "100%";
+    background-color: aqua;
+}
+.header{
+    position: relative;
+    width: "100%";
+    height: 30vh;
+    background-color: red;
+}
