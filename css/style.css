@@ -1,11 +1,65 @@
-body{
+.wraaper{
+    left: 0%;
+    top: 0%;
     position: absolute;
-    width: "100%";
-    background-color: aqua;
+    width: 100%;
+    height: 300vh;
+    background-color: #f0f0f0;
 }
+
 .header{
     position: relative;
-    width: "100%";
-    height: 30vh;
-    background-color: red;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 10vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+    color: #ffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    font-weight: bold;
+}
+.notice{
+    top: 2%;
+    left: 7%;
+    width: 86%; 
+    height: 80vh;
+    background-color: #fff; 
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    border-radius: 2vh;
+}
+.image{
+    width: 50%; 
+    height: 90%; 
+    left: 2%; 
+    top: 5%; 
+    position: relative; 
+    background-color: #000
+}
+.text-notice{
+    width: 45%; 
+    height: 90%; 
+    left: 3%; 
+    top: 5%; 
+    position: relative; 
+    background-color: #000
+}
+.other-notices{
+    left: 7%; 
+    top: 5%; 
+    width: 86%; 
+    height: 150vh; 
+    background-color: #ffff; 
+    position: relative; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-evenly;
+    border-radius: 2vh;
 }
