@@ -41,7 +41,8 @@
     left: 2%; 
     top: 5%; 
     position: relative; 
-    background-color: #000
+    border: 1px solid #000;
+    border-radius: 2vh;
 }
 .text-notice{
     width: 45%; 
@@ -49,7 +50,8 @@
     left: 3%; 
     top: 5%; 
     position: relative; 
-    background-color: #000
+    border: 1px solid #000;
+    border-radius: 2vh;
 }
 .other-notices{
     left: 7%; 
@@ -62,4 +64,15 @@
     flex-direction: column; 
     justify-content: space-evenly;
     border-radius: 2vh;
+}
+.information{
+    left: 5%; 
+    width: 90%; 
+    height: 40vh; 
+    position: relative;
+    border: 1px solid #000;
+    border-radius: 2vh;
+}
+.text-notice-all{
+    
 }
