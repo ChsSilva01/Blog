@@ -12,7 +12,7 @@
         mysqli_select_db($conexao,"blog");
         mysqli_set_charset($conexao, "UTF8");
 
-        $query = mysqli_query($conexao,"SELECT imagens.imagem, textos.texto, textos.dat, textos.titulo, textos.subtitulo FROM noticia INNER JOIN imagens ON noticia.codigo_imagens = imagens.codigo_imagem INNER JOIN textos ON noticia.codigo_texto = textos.codigo_texto;");
+        $query = mysqli_query($conexao,"SELECT imagens.imagem, textos.texto, textos.dat, textos.titulo, textos.subtitulo FROM noticia INNER JOIN imagens ON noticia.codigo_imagens = imagens.codigo_imagem INNER JOIN textos ON noticia.codigo_texto = textos.codigo_texto ORDER BY cod_noticia ASC LIMIT 3;");
 
         while($exibe = mysqli_fetch_array($query)){
             echo 
@@ -26,10 +26,13 @@
                     </div>
                     <div class="text-notice">
                         <b style="font-size: 2vw">'.$exibe[3].'</b><br>
-                        <a style="font-size: 1vw">'.$exibe[4].'</a><br>
-                        <a style="font-size: 1vw; padding-top: 2vw">'.$exibe[1].'</a>
+                        <a style="font-size: 1.5vw">'.$exibe[4].'</a><br>
+                        <div style="margin-top: 10px; width: 35vw; text-align: justify; margin-left: 15px">
+                        <a style="font-size: 1.5vw; padding: 10px">'.$exibe[1].'</a>
+                        </div>
                     </div>
                 </div>
+                
                 <div class="other-notices">
                     <div class="information">
                         
@@ -37,8 +40,9 @@
                     <div class="information"></div>
                     <div class="information"></div>
                 </div>
+
             </div>'      
-            ;
+            ;    
         }
     ?>
     
