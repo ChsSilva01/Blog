@@ -27,6 +27,7 @@ CREATE TABLE IF NOT EXISTS `imagens` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 -- Copiando dados para a tabela blog.imagens: ~3 rows (aproximadamente)
+DELETE FROM `imagens`;
 INSERT INTO `imagens` (`codigo_imagem`, `imagem`) VALUES
 	(1, 'meliante.png'),
 	(2, 'bixano.jpg'),
@@ -45,6 +46,7 @@ CREATE TABLE IF NOT EXISTS `noticia` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 -- Copiando dados para a tabela blog.noticia: ~3 rows (aproximadamente)
+DELETE FROM `noticia`;
 INSERT INTO `noticia` (`cod_noticia`, `codigo_imagens`, `codigo_texto`) VALUES
 	(1, 1, 1),
 	(2, 2, 2),
@@ -61,6 +63,7 @@ CREATE TABLE IF NOT EXISTS `textos` (
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 -- Copiando dados para a tabela blog.textos: ~3 rows (aproximadamente)
+DELETE FROM `textos`;
 INSERT INTO `textos` (`codigo_texto`, `dat`, `texto`, `titulo`, `subtitulo`) VALUES
 	(1, '2026-03-02', 'No tranquilo bairro residencial de São Mateus, uma série de furtos misteriosos deixou os moradores perplexos nas últimas semanas. O mistério envolvendo a ração desaparecendo dos potes dos pets finalmente foi resolvido quando uma vigilância noturna inesperada pegou o verdadeiro culpado em flagrante: um cachorro local, apelidado de Peludo.', 'Cachorro Ladino: Peludo é Pego Roubando Ração de Casa Vizinha', 'Caso inusitado ocorreu no bairro quando moradores descobriram o verdadeiro "ladrão de ração" que vinha esvaziando seus potes.'),
 	(2, '2024-03-10', 'Moradores da pacata cidade de Jardim Verde estão intrigados com as recentes travessuras de um gato local conhecido como Felinus. O felino, que aparentemente desenvolveu um talento único para o furto, deixou vizinhos perplexos ao desaparecerem pequenos objetos de suas residências sem deixar vestígios.', 'Gato Ladino Surpreende Vizinhos com Habilidades Incomuns', '"Felinus, o Mestre do Furto, deixa moradores perplexos em pequena cidade"'),
